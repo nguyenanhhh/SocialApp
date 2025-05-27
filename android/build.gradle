@@ -1,0 +1,43 @@
+buildscript {
+    ext {
+
+        googlePlayServicesVersion = "+" // default: "+"
+        firebaseMessagingVersion = "21.1.0" // default: "21.1.0"
+
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 23
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "26.1.10909125"
+        kotlinVersion = "1.9.24"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle: 8.11.1")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath "com.google.gms:google-services:4.4.2"
+        // classpath "com.google.gms:google-services:3.2.1"
+    }
+
+}
+
+    allprojects {
+    repositories {
+        google() 
+        mavenCentral()
+       maven {
+           // react-native-background-fetch
+           url("${project(':react-native-background-fetch').projectDir}/libs")
+       }
+        // maven {
+        //     url "https://maven.google.com"
+        // }
+        // jcenter()
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"
