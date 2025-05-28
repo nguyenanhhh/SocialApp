@@ -1,4 +1,6 @@
 package com.myapp
+//import cl.json.RNSharePackage;
+//import cl.json.ShareApplication;
 import android.app.Application
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -12,6 +14,7 @@ import com.facebook.soloader.SoLoader
 import live.videosdk.rnwebrtc.WebRTCModulePackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;  // <--- Import Package
 import com.reactnativerestart.RestartPackage;
+
 class MainApplication : Application(), ReactApplication {
 
   override val reactNativeHost: ReactNativeHost =

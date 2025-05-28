@@ -13,7 +13,7 @@ import SocketClient from '../../../socket'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectCurrentUser, userAction } from '~/redux/slice/userSlice'
 import { OpacityButtton } from '~/components/ButtonComponent'
-import Share from 'react-native-share'
+// import Share from 'react-native-share'
 import ProfileModel from '~/modals/ProfileModel'
 import TextComponent from '~/components/TextComponent'
 const OwnerProfile = ({ navigation, route }) => {

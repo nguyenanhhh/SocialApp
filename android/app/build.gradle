@@ -127,9 +127,14 @@ dependencies {
     }
     implementation project(':rnfgservice')
     implementation project(':rnwebrtc')
-
+//    implementation project(':react-native-share')
     implementation project(':react-native-restart')
 }
 
 
 apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+afterEvaluate {
+    tasks.named("generateDebugLintReportModel").configure {
+        it.dependsOn("copyReactNativeVectorIconFonts")
+    }
+}

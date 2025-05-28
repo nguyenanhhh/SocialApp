@@ -3934,7 +3934,6 @@ __metadata:
     react-native-restart: ^0.0.27
     react-native-safe-area-context: ^4.11.0
     react-native-screens: ^3.34.0
-    react-native-share: ^12.0.11
     react-native-sound: ^0.11.2
     react-native-tab-view: ^3.5.2
     react-native-vector-icons: ^10.2.0
@@ -9584,13 +9583,6 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 84d1e4697ab7afccf42111d13b7c7e68d382b136f4f4d9cd8fd077b0984ada3114e8c7459a69159983a538fe35db1cf4296075e72fc8cb45341e0feb5080d3dc
-  languageName: node
-  linkType: hard
-
-"react-native-share@npm:^12.0.11":
-  version: 12.0.11
-  resolution: "react-native-share@npm:12.0.11"
-  checksum: 5b6fcd3391483906784d499b4c025e2238f2af2876bd7a8577edfdb7c2f12a1b46558a00c3a9050e3189394f8cc1a4b5d9864ce0c4e67f47707c54560de52815
   languageName: node
   linkType: hard
 

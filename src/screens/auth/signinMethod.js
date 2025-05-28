@@ -21,7 +21,7 @@ const signOutWithGoogle = async () => {
   await configGoogleMethod()
   GoogleSignin.signOut()
     .then((result) => {
-    
+
       messaging().deleteToken()
     })
     .catch((error) => console.log('error when sign out', error))
@@ -29,8 +29,8 @@ const signOutWithGoogle = async () => {
 
 async function signInWithGoogle() {
   await configGoogleMethod()
-  await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true })
-
+  // await GoogleSignin.hasPlayServices({ showPlayServicesUpdateDialog: true })
+  await GoogleSignin.signOut().catch(er => console.log('error when sign out', er))
   return await GoogleSignin.signIn()
     .then(async (data) => {
       if (data.type === 'success') {

@@ -16,3 +16,6 @@ project(':rnfgservice').projectDir = new File(rootProject.projectDir, '../node_m
 
 include ':react-native-restart'
 project(':react-native-restart').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-restart/android')
+
+//include ':react-native-share'
+//project(':react-native-share').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-share/android')
