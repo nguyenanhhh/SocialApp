@@ -62,6 +62,7 @@ npx react-native start
 # You can also download and run our mobile application:
 The backend is hosted on Render (free plan), which goes into sleep mode after some inactivity.
 Please open the following link in your browser to wake up the backend before using the app:  https://projects-socialserver-2tpd.onrender.com/
+
 🔗 Download APK: https://drive.google.com/file/d/1JSNw2lApnAgC1pQ7IVw2JEWFQ83UddVe/view?usp=sharing
 # Clip demo: 
 https://youtu.be/_IvugFcWmhA
